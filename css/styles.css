@@ -144,7 +144,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--tertiary-color, #757575);
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .address-flex .contacts-data {
@@ -417,7 +417,8 @@ address ul li {
 }
 
 .icon-contact {
-  fill: currentColor;
+  fill: var(--tertiary-color, #757575);
+  cursor: pointer;
 }
 
 .our-clients {
@@ -471,16 +472,38 @@ address ul li {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.grey-circle .icon-social {
+  fill: #ffffff;
+}
+
 .grey-circle:hover,
 .grey-circle:focus,
 .grey-circle:hover svg,
 .grey-circle:focus svg {
   background-color: #2196f3;
-  fill: #ffffff;
 }
 
 .item:hover,
 .item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.lorem-width {
+  width: 270px;
+}
+
+.contact-flex {
+  display: flex;
+  align-items: center;
+}
+
+.contact-flex-mail {
+  margin-right: 20px;
+}
+
+.contact-flex:hover svg,
+.contact-flex:focus svg,
+.contact-flex.icon-contact:hover {
+  fill: var(--secendary-color, #2196f3);
 }
